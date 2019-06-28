@@ -1,0 +1,22 @@
+CREATE TABLE  `epiz_23840517_db`.`sostanoci` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`datum` VARCHAR( 128 ) NOT NULL ,
+`vreme` VARCHAR( 128 ) NOT NULL ,
+`pokaneti` TEXT NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM ;
+
+CREATE TABLE  `epiz_23840517_db`.`korisnici` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`email` VARCHAR( 128 ) NOT NULL ,
+`password` VARCHAR( 128 ) NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM ;
+
+CREATE TABLE  `epiz_23840517_db`.`prifateni_sostanoci` (
+`id_korisnik` INT NOT NULL ,
+`id_sostanok` INT NOT NULL ,
+`datum` VARCHAR( 128 ) NOT NULL ,
+`vreme` VARCHAR( 128 ) NOT NULL ,
+`pokaneti` TEXT NOT NULL
+) ENGINE = MYISAM ;
